@@ -1,0 +1,653 @@
+{
+  "caskets": [
+    {
+      "id": "wood-oak",
+      "category": "Traditional Wood Caskets",
+      "name": "Oak Casket",
+      "material": "Oak",
+      "priceRange": {
+        "min": 3500,
+        "max": 5500,
+        "display": "$3,500-$5,500"
+      },
+      "description": "Timeless elegance with natural oak wood beauty. Hand-crafted with attention to detail.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/oak",
+      "features": ["Solid oak construction", "Hand-rubbed finish", "Premium interior"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 8,
+        "lowStockThreshold": 3,
+        "lastRestocked": "2024-10-15",
+        "supplier": "Heritage Woodworks Inc.",
+        "leadTime": "7-10 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 127,
+        "totalRevenue": 558500,
+        "lastMonthSales": 12,
+        "lastMonthRevenue": 52800,
+        "yearToDateSales": 89,
+        "averageRating": 4.7,
+        "customerReviews": 43,
+        "trending": true,
+        "popularityRank": 2
+      }
+    },
+    {
+      "id": "wood-mahogany",
+      "category": "Traditional Wood Caskets",
+      "name": "Mahogany Casket",
+      "material": "Mahogany",
+      "priceRange": {
+        "min": 5000,
+        "max": 8000,
+        "display": "$5,000-$8,000"
+      },
+      "description": "Rich mahogany wood with deep, warm tones and exceptional durability.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/mahogany",
+      "features": ["Genuine mahogany", "High-gloss finish", "Velvet interior"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 4,
+        "lowStockThreshold": 2,
+        "lastRestocked": "2024-10-20",
+        "supplier": "Heritage Woodworks Inc.",
+        "leadTime": "10-14 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 78,
+        "totalRevenue": 507000,
+        "lastMonthSales": 6,
+        "lastMonthRevenue": 39000,
+        "yearToDateSales": 54,
+        "averageRating": 4.9,
+        "customerReviews": 29,
+        "trending": false,
+        "popularityRank": 5
+      }
+    },
+    {
+      "id": "wood-cherry",
+      "category": "Traditional Wood Caskets",
+      "name": "Cherry Casket",
+      "material": "Cherry",
+      "priceRange": {
+        "min": 4000,
+        "max": 6500,
+        "display": "$4,000-$6,500"
+      },
+      "description": "Beautiful cherry wood with reddish undertones that deepen with age.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/cherry",
+      "features": ["Select cherry wood", "Satin finish", "Crepe interior"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 6,
+        "lowStockThreshold": 3,
+        "lastRestocked": "2024-10-18",
+        "supplier": "Heritage Woodworks Inc.",
+        "leadTime": "7-10 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 95,
+        "totalRevenue": 498750,
+        "lastMonthSales": 9,
+        "lastMonthRevenue": 47250,
+        "yearToDateSales": 67,
+        "averageRating": 4.6,
+        "customerReviews": 38,
+        "trending": true,
+        "popularityRank": 3
+      }
+    },
+    {
+      "id": "wood-pine",
+      "category": "Traditional Wood Caskets",
+      "name": "Pine Casket",
+      "material": "Pine",
+      "priceRange": {
+        "min": 2500,
+        "max": 3500,
+        "display": "$2,500-$3,500"
+      },
+      "description": "Simple, dignified pine wood construction with natural character.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/pine",
+      "features": ["Solid pine", "Natural finish", "Cotton interior"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 12,
+        "lowStockThreshold": 5,
+        "lastRestocked": "2024-10-22",
+        "supplier": "Evergreen Caskets LLC",
+        "leadTime": "5-7 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 156,
+        "totalRevenue": 468000,
+        "lastMonthSales": 18,
+        "lastMonthRevenue": 54000,
+        "yearToDateSales": 112,
+        "averageRating": 4.4,
+        "customerReviews": 62,
+        "trending": true,
+        "popularityRank": 4
+      }
+    },
+    {
+      "id": "metal-steel",
+      "category": "Metal Caskets",
+      "name": "Steel Casket",
+      "material": "Steel",
+      "priceRange": {
+        "min": 1800,
+        "max": 4000,
+        "display": "$1,800-$4,000"
+      },
+      "description": "Durable 18-gauge steel construction with protective sealing.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/steel",
+      "features": ["18-gauge steel", "Rust-resistant coating", "Adjustable bed"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 15,
+        "lowStockThreshold": 5,
+        "lastRestocked": "2024-10-25",
+        "supplier": "Titan Metal Works",
+        "leadTime": "3-5 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 214,
+        "totalRevenue": 599200,
+        "lastMonthSales": 22,
+        "lastMonthRevenue": 61600,
+        "yearToDateSales": 153,
+        "averageRating": 4.5,
+        "customerReviews": 87,
+        "trending": true,
+        "popularityRank": 1
+      }
+    },
+    {
+      "id": "metal-bronze",
+      "category": "Metal Caskets",
+      "name": "Bronze Casket",
+      "material": "Bronze",
+      "priceRange": {
+        "min": 4500,
+        "max": 6500,
+        "display": "$4,500-$6,500"
+      },
+      "description": "Premium bronze with timeless beauty and superior protection.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/bronze",
+      "features": ["32-ounce bronze", "Hand-polished", "Velvet interior"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 3,
+        "lowStockThreshold": 2,
+        "lastRestocked": "2024-09-30",
+        "supplier": "Premier Bronze Crafts",
+        "leadTime": "14-21 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 42,
+        "totalRevenue": 231000,
+        "lastMonthSales": 3,
+        "lastMonthRevenue": 16500,
+        "yearToDateSales": 29,
+        "averageRating": 4.8,
+        "customerReviews": 18,
+        "trending": false,
+        "popularityRank": 8
+      }
+    },
+    {
+      "id": "metal-copper",
+      "category": "Metal Caskets",
+      "name": "Copper Casket",
+      "material": "Copper",
+      "priceRange": {
+        "min": 4000,
+        "max": 6000,
+        "display": "$4,000-$6,000"
+      },
+      "description": "Elegant copper construction with natural antimicrobial properties.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/copper",
+      "features": ["48-ounce copper", "Brushed finish", "Satin interior"],
+      "inventory": {
+        "inStock": false,
+        "quantity": 0,
+        "lowStockThreshold": 2,
+        "lastRestocked": "2024-08-15",
+        "supplier": "Premier Bronze Crafts",
+        "leadTime": "21-28 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 31,
+        "totalRevenue": 155000,
+        "lastMonthSales": 1,
+        "lastMonthRevenue": 5000,
+        "yearToDateSales": 19,
+        "averageRating": 4.7,
+        "customerReviews": 12,
+        "trending": false,
+        "popularityRank": 10
+      }
+    },
+    {
+      "id": "eco-bamboo",
+      "category": "Eco-Friendly Options",
+      "name": "Bamboo Casket",
+      "material": "Bamboo",
+      "priceRange": {
+        "min": 1800,
+        "max": 2800,
+        "display": "$1,800-$2,800"
+      },
+      "description": "Sustainable bamboo construction, perfect for green burials.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/bamboo",
+      "features": ["100% sustainable bamboo", "Natural finish", "Organic cotton lining"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 10,
+        "lowStockThreshold": 4,
+        "lastRestocked": "2024-10-28",
+        "supplier": "Green Earth Products",
+        "leadTime": "7-10 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 89,
+        "totalRevenue": 200700,
+        "lastMonthSales": 14,
+        "lastMonthRevenue": 31500,
+        "yearToDateSales": 68,
+        "averageRating": 4.8,
+        "customerReviews": 52,
+        "trending": true,
+        "popularityRank": 6
+      }
+    },
+    {
+      "id": "eco-willow",
+      "category": "Eco-Friendly Options",
+      "name": "Willow Casket",
+      "material": "Willow",
+      "priceRange": {
+        "min": 1200,
+        "max": 2200,
+        "display": "$1,200-$2,200"
+      },
+      "description": "Hand-woven willow, biodegradable and environmentally friendly.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/willow",
+      "features": ["Hand-woven willow", "Fully biodegradable", "Natural fiber lining"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 7,
+        "lowStockThreshold": 3,
+        "lastRestocked": "2024-10-26",
+        "supplier": "Green Earth Products",
+        "leadTime": "10-14 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 64,
+        "totalRevenue": 108800,
+        "lastMonthSales": 8,
+        "lastMonthRevenue": 13600,
+        "yearToDateSales": 48,
+        "averageRating": 4.6,
+        "customerReviews": 34,
+        "trending": true,
+        "popularityRank": 7
+      }
+    },
+    {
+      "id": "eco-biodegradable",
+      "category": "Eco-Friendly Options",
+      "name": "Biodegradable Casket",
+      "material": "Recycled Materials",
+      "priceRange": {
+        "min": 1500,
+        "max": 3500,
+        "display": "$1,500-$3,500"
+      },
+      "description": "Made from recycled and biodegradable materials for minimal environmental impact.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/biodegradable",
+      "features": ["Eco-certified materials", "Biodegradable", "Minimal carbon footprint"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 9,
+        "lowStockThreshold": 4,
+        "lastRestocked": "2024-10-24",
+        "supplier": "Green Earth Products",
+        "leadTime": "7-10 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 52,
+        "totalRevenue": 130000,
+        "lastMonthSales": 7,
+        "lastMonthRevenue": 17500,
+        "yearToDateSales": 39,
+        "averageRating": 4.5,
+        "customerReviews": 28,
+        "trending": true,
+        "popularityRank": 9
+      }
+    },
+    {
+      "id": "luxury-custom",
+      "category": "Premium Luxury Caskets",
+      "name": "Custom Luxury Casket",
+      "material": "Custom Design",
+      "priceRange": {
+        "min": 8000,
+        "max": null,
+        "display": "$8,000+"
+      },
+      "description": "Bespoke craftsmanship with personalized design, materials, and finishes to honor your loved one uniquely.",
+      "image": "/casket-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/caskets/custom",
+      "features": ["Custom design consultation", "Premium materials", "Personalized engravings", "Unique finishes"],
+      "inventory": {
+        "inStock": true,
+        "quantity": 0,
+        "lowStockThreshold": 0,
+        "lastRestocked": null,
+        "supplier": "In-house Custom Shop",
+        "leadTime": "30-60 days"
+      },
+      "salesData": {
+        "totalUnitsSold": 23,
+        "totalRevenue": 276000,
+        "lastMonthSales": 2,
+        "lastMonthRevenue": 24000,
+        "yearToDateSales": 18,
+        "averageRating": 5.0,
+        "customerReviews": 23,
+        "trending": false,
+        "popularityRank": 11
+      }
+    }
+  ],
+  "packages": [
+    {
+      "id": "essential-package",
+      "category": "Essential Packages",
+      "name": "Essential Farewell Package",
+      "type": "Basic Service",
+      "priceRange": {
+        "min": 2500,
+        "max": 3500,
+        "display": "$2,500-$3,500"
+      },
+      "description": "A dignified and affordable service that covers all essential funeral needs with compassion and care.",
+      "image": "/package-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/packages/essential",
+      "features": [
+        "Professional care and preparation",
+        "Simple casket selection",
+        "Viewing room for 2 hours",
+        "Graveside service coordination",
+        "Basic memorial cards",
+        "Transportation within 30 miles"
+      ],
+      "inventory": {
+        "available": true,
+        "monthlyCapacity": 25,
+        "currentMonthBooked": 18,
+        "nextAvailable": "2024-11-02",
+        "averageBookingLeadTime": "3-5 days"
+      },
+      "salesData": {
+        "totalPackagesSold": 284,
+        "totalRevenue": 852000,
+        "lastMonthSales": 22,
+        "lastMonthRevenue": 66000,
+        "yearToDateSales": 201,
+        "averageRating": 4.3,
+        "customerReviews": 142,
+        "trending": true,
+        "popularityRank": 2
+      }
+    },
+    {
+      "id": "traditional-package",
+      "category": "Traditional Packages",
+      "name": "Traditional Service Package",
+      "type": "Full Service",
+      "priceRange": {
+        "min": 5000,
+        "max": 7500,
+        "display": "$5,000-$7,500"
+      },
+      "description": "A complete traditional funeral service with viewing, ceremony, and all necessary arrangements.",
+      "image": "/package-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/packages/traditional",
+      "features": [
+        "Professional care and embalming",
+        "Mid-range casket selection",
+        "Two-day viewing (4 hours each)",
+        "Full funeral ceremony",
+        "Chapel or church service coordination",
+        "Hearse and family car",
+        "Memorial guest book and cards",
+        "Online obituary posting"
+      ],
+      "inventory": {
+        "available": true,
+        "monthlyCapacity": 20,
+        "currentMonthBooked": 14,
+        "nextAvailable": "2024-11-03",
+        "averageBookingLeadTime": "5-7 days"
+      },
+      "salesData": {
+        "totalPackagesSold": 189,
+        "totalRevenue": 1181250,
+        "lastMonthSales": 15,
+        "lastMonthRevenue": 93750,
+        "yearToDateSales": 134,
+        "averageRating": 4.7,
+        "customerReviews": 98,
+        "trending": true,
+        "popularityRank": 1
+      }
+    },
+    {
+      "id": "premium-package",
+      "category": "Premium Packages",
+      "name": "Premium Memorial Package",
+      "type": "Deluxe Service",
+      "priceRange": {
+        "min": 8000,
+        "max": 12000,
+        "display": "$8,000-$12,000"
+      },
+      "description": "Our most comprehensive service with premium amenities, extended viewing, and personalized touches.",
+      "image": "/package-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/packages/premium",
+      "features": [
+        "Premium care and preservation",
+        "Premium casket selection",
+        "Extended viewing hours (up to 3 days)",
+        "Large chapel service capacity",
+        "Professional video tribute",
+        "Luxury transportation fleet",
+        "Custom memorial materials",
+        "Catered reception coordination",
+        "Professional photography",
+        "Unlimited mileage"
+      ],
+      "inventory": {
+        "available": true,
+        "monthlyCapacity": 12,
+        "currentMonthBooked": 7,
+        "nextAvailable": "2024-11-05",
+        "averageBookingLeadTime": "7-14 days"
+      },
+      "salesData": {
+        "totalPackagesSold": 67,
+        "totalRevenue": 670000,
+        "lastMonthSales": 5,
+        "lastMonthRevenue": 50000,
+        "yearToDateSales": 48,
+        "averageRating": 4.9,
+        "customerReviews": 52,
+        "trending": false,
+        "popularityRank": 5
+      }
+    },
+    {
+      "id": "cremation-package",
+      "category": "Cremation Packages",
+      "name": "Cremation with Memorial",
+      "type": "Cremation Service",
+      "priceRange": {
+        "min": 1800,
+        "max": 3500,
+        "display": "$1,800-$3,500"
+      },
+      "description": "Dignified cremation service with memorial gathering and urn selection.",
+      "image": "/package-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/packages/cremation",
+      "features": [
+        "Professional cremation services",
+        "Selection of quality urns",
+        "Memorial service coordination",
+        "Viewing before cremation (optional)",
+        "Ash scattering assistance",
+        "Memorial keepsakes",
+        "Death certificates",
+        "Online memorial page"
+      ],
+      "inventory": {
+        "available": true,
+        "monthlyCapacity": 30,
+        "currentMonthBooked": 21,
+        "nextAvailable": "2024-11-01",
+        "averageBookingLeadTime": "2-4 days"
+      },
+      "salesData": {
+        "totalPackagesSold": 312,
+        "totalRevenue": 811200,
+        "lastMonthSales": 28,
+        "lastMonthRevenue": 72800,
+        "yearToDateSales": 224,
+        "averageRating": 4.5,
+        "customerReviews": 168,
+        "trending": true,
+        "popularityRank": 3
+      }
+    },
+    {
+      "id": "green-package",
+      "category": "Eco-Friendly Packages",
+      "name": "Green Burial Package",
+      "type": "Natural Service",
+      "priceRange": {
+        "min": 3000,
+        "max": 5000,
+        "display": "$3,000-$5,000"
+      },
+      "description": "Environmentally conscious funeral service using sustainable practices and natural burial options.",
+      "image": "/package-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/packages/green",
+      "features": [
+        "Natural body preparation (no embalming)",
+        "Biodegradable casket or shroud",
+        "Green burial site coordination",
+        "Natural memorial service",
+        "Native plant memorial",
+        "Carbon-neutral transportation",
+        "Eco-friendly memorial materials",
+        "Natural burial permits"
+      ],
+      "inventory": {
+        "available": true,
+        "monthlyCapacity": 15,
+        "currentMonthBooked": 9,
+        "nextAvailable": "2024-11-04",
+        "averageBookingLeadTime": "5-10 days"
+      },
+      "salesData": {
+        "totalPackagesSold": 76,
+        "totalRevenue": 304000,
+        "lastMonthSales": 11,
+        "lastMonthRevenue": 44000,
+        "yearToDateSales": 58,
+        "averageRating": 4.8,
+        "customerReviews": 49,
+        "trending": true,
+        "popularityRank": 4
+      }
+    },
+    {
+      "id": "direct-cremation",
+      "category": "Simple Packages",
+      "name": "Direct Cremation",
+      "type": "Basic Cremation",
+      "priceRange": {
+        "min": 995,
+        "max": 1500,
+        "display": "$995-$1,500"
+      },
+      "description": "The most economical option with cremation only, no service or viewing.",
+      "image": "/package-placeholder.png",
+      "learnMoreUrl": "https://www.example.com/packages/direct-cremation",
+      "features": [
+        "Professional cremation",
+        "Basic urn included",
+        "Transportation to crematory",
+        "Death certificates (5 copies)",
+        "Ashes returned to family",
+        "No service or viewing"
+      ],
+      "inventory": {
+        "available": true,
+        "monthlyCapacity": 40,
+        "currentMonthBooked": 29,
+        "nextAvailable": "2024-10-31",
+        "averageBookingLeadTime": "1-2 days"
+      },
+      "salesData": {
+        "totalPackagesSold": 428,
+        "totalRevenue": 535000,
+        "lastMonthSales": 38,
+        "lastMonthRevenue": 47500,
+        "yearToDateSales": 308,
+        "averageRating": 4.2,
+        "customerReviews": 203,
+        "trending": true,
+        "popularityRank": 6
+      }
+    }
+  ],
+  "includedFeatures": [
+    "Interior lining and pillow",
+    "Handles and hardware",
+    "Protective sealing options",
+    "Personalization services available"
+  ],
+  "packageIncludedFeatures": [
+    "24/7 immediate response",
+    "Professional staff assistance",
+    "Coordination with all parties",
+    "Required permits and certificates",
+    "Online arrangement portal",
+    "Grief support resources"
+  ],
+  "metadata": {
+    "lastUpdated": "2024-10-30",
+    "totalCasketInventoryValue": 1847500,
+    "totalPackagesBookedThisMonth": 98,
+    "overallCustomerSatisfaction": 4.6,
+    "totalRevenueYearToDate": 8521250,
+    "topSellingCategory": "Metal Caskets",
+    "fastestGrowingCategory": "Eco-Friendly Options"
+  }
+}
