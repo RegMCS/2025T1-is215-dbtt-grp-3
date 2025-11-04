@@ -1,0 +1,270 @@
+{
+  "monthlyRevenue": [
+    {
+      "month": "Jan",
+      "year": 2024,
+      "caskets": 38000,
+      "packages": 78000,
+      "total": 116000,
+      "casketsSold": 68,
+      "packagesSold": 98
+    },
+    {
+      "month": "Feb",
+      "year": 2024,
+      "caskets": 42000,
+      "packages": 82000,
+      "total": 124000,
+      "casketsSold": 75,
+      "packagesSold": 103
+    },
+    {
+      "month": "Mar",
+      "year": 2024,
+      "caskets": 44000,
+      "packages": 85000,
+      "total": 129000,
+      "casketsSold": 79,
+      "packagesSold": 107
+    },
+    {
+      "month": "Apr",
+      "year": 2024,
+      "caskets": 41000,
+      "packages": 87000,
+      "total": 128000,
+      "casketsSold": 73,
+      "packagesSold": 110
+    },
+    {
+      "month": "May",
+      "year": 2024,
+      "caskets": 47000,
+      "packages": 91000,
+      "total": 138000,
+      "casketsSold": 84,
+      "packagesSold": 115
+    },
+    {
+      "month": "Jun",
+      "year": 2024,
+      "caskets": 45000,
+      "packages": 89000,
+      "total": 134000,
+      "casketsSold": 81,
+      "packagesSold": 112
+    },
+    {
+      "month": "Jul",
+      "year": 2024,
+      "caskets": 52000,
+      "packages": 95000,
+      "total": 147000,
+      "casketsSold": 93,
+      "packagesSold": 120
+    },
+    {
+      "month": "Aug",
+      "year": 2024,
+      "caskets": 48000,
+      "packages": 98000,
+      "total": 146000,
+      "casketsSold": 86,
+      "packagesSold": 124
+    },
+    {
+      "month": "Sep",
+      "year": 2024,
+      "caskets": 54000,
+      "packages": 102000,
+      "total": 156000,
+      "casketsSold": 97,
+      "packagesSold": 129
+    },
+    {
+      "month": "Oct",
+      "year": 2024,
+      "caskets": 56000,
+      "packages": 109000,
+      "total": 165000,
+      "casketsSold": 101,
+      "packagesSold": 138
+    }
+  ],
+  "quarterlyPerformance": [
+    {
+      "quarter": "Q1 2024",
+      "revenue": 369000,
+      "casketRevenue": 124000,
+      "packageRevenue": 245000,
+      "unitsSold": 640,
+      "growthRate": 8.5
+    },
+    {
+      "quarter": "Q2 2024",
+      "revenue": 400000,
+      "casketRevenue": 133000,
+      "packageRevenue": 267000,
+      "unitsSold": 667,
+      "growthRate": 8.4
+    },
+    {
+      "quarter": "Q3 2024",
+      "revenue": 449000,
+      "casketRevenue": 154000,
+      "packageRevenue": 295000,
+      "unitsSold": 749,
+      "growthRate": 12.3
+    },
+    {
+      "quarter": "Q4 2024 (Current)",
+      "revenue": 165000,
+      "casketRevenue": 56000,
+      "packageRevenue": 109000,
+      "unitsSold": 239,
+      "growthRate": 12.5,
+      "note": "October only - partial quarter"
+    }
+  ],
+  "categoryTrends": {
+    "Traditional Wood Caskets": {
+      "janToOct": [38500, 42000, 43500, 40800, 46200, 44100, 50400, 46800, 52200, 54600],
+      "growthRate": 41.8
+    },
+    "Metal Caskets": {
+      "janToOct": [52000, 56000, 58500, 54600, 62300, 59800, 68600, 63400, 70800, 73900],
+      "growthRate": 42.1
+    },
+    "Eco-Friendly Options": {
+      "janToOct": [18200, 19800, 21500, 22100, 24800, 23600, 27500, 26400, 29600, 31500],
+      "growthRate": 73.1
+    },
+    "Premium Luxury Caskets": {
+      "janToOct": [8300, 9100, 9800, 8700, 10200, 9400, 11300, 10200, 11800, 12400],
+      "growthRate": 49.4
+    }
+  },
+  "topProducts": {
+    "caskets": [
+      {
+        "id": "metal-steel",
+        "name": "Steel Casket",
+        "monthlyRevenue": [5200, 5600, 5850, 5460, 6230, 5980, 6860, 6340, 7080, 7390],
+        "monthlySales": [19, 21, 22, 20, 23, 22, 25, 23, 26, 27]
+      },
+      {
+        "id": "wood-oak",
+        "name": "Oak Casket",
+        "monthlyRevenue": [4200, 4600, 4800, 4500, 5100, 4900, 5600, 5200, 5800, 6050],
+        "monthlySales": [10, 11, 12, 11, 13, 12, 14, 13, 15, 15]
+      },
+      {
+        "id": "wood-cherry",
+        "name": "Cherry Casket",
+        "monthlyRevenue": [3800, 4200, 4400, 4100, 4700, 4500, 5200, 4800, 5400, 5650],
+        "monthlySales": [8, 9, 9, 8, 10, 9, 11, 10, 11, 12]
+      }
+    ],
+    "packages": [
+      {
+        "id": "traditional-package",
+        "name": "Traditional Service Package",
+        "monthlyRevenue": [8500, 9100, 9500, 9000, 10200, 9800, 11200, 10400, 11800, 12300],
+        "monthlySales": [14, 15, 16, 15, 17, 16, 19, 17, 20, 21]
+      },
+      {
+        "id": "essential-package",
+        "name": "Essential Farewell Package",
+        "monthlyRevenue": [6200, 6700, 7000, 6600, 7500, 7200, 8300, 7700, 8700, 9100],
+        "monthlySales": [21, 23, 24, 23, 26, 25, 28, 26, 30, 31]
+      },
+      {
+        "id": "cremation-package",
+        "name": "Cremation with Memorial",
+        "monthlyRevenue": [6800, 7300, 7600, 7200, 8200, 7900, 9100, 8400, 9500, 9900],
+        "monthlySales": [26, 28, 29, 28, 31, 30, 34, 32, 36, 38]
+      }
+    ]
+  },
+  "dailyAverages": {
+    "weekdayRevenue": 5800,
+    "weekendRevenue": 4200,
+    "peakDay": "Thursday",
+    "slowestDay": "Sunday",
+    "averageTransactionValue": 4850,
+    "averageDailyInquiries": 12
+  },
+  "customerMetrics": {
+    "averageAge": 67,
+    "preNeedPlanningPercentage": 34,
+    "repeatFamilyPercentage": 18,
+    "referralRate": 42,
+    "onlineInquiryRate": 56,
+    "averageSatisfactionScore": 4.6,
+    "responseTime24h": "95%"
+  },
+  "inventoryMetrics": {
+    "averageTurnoverRate": 4.2,
+    "stockoutIncidents": 3,
+    "lowStockAlerts": 5,
+    "supplierOnTimeDelivery": "92%",
+    "warehouseUtilization": "78%"
+  },
+  "seasonalTrends": {
+    "highSeasonMonths": ["December", "January", "March"],
+    "lowSeasonMonths": ["July", "August"],
+    "holidayImpact": {
+      "christmas": -12,
+      "thanksgiving": 8,
+      "memorialDay": 15
+    }
+  },
+  "forecasts": {
+    "nextSixMonths": [
+      {
+        "month": "Nov",
+        "year": 2024,
+        "projectedRevenue": 178200,
+        "confidenceInterval": "±8%"
+      },
+      {
+        "month": "Dec",
+        "year": 2024,
+        "projectedRevenue": 189750,
+        "confidenceInterval": "±10%"
+      },
+      {
+        "month": "Jan",
+        "year": 2025,
+        "projectedRevenue": 184800,
+        "confidenceInterval": "±9%"
+      },
+      {
+        "month": "Feb",
+        "year": 2025,
+        "projectedRevenue": 174900,
+        "confidenceInterval": "±7%"
+      },
+      {
+        "month": "Mar",
+        "year": 2025,
+        "projectedRevenue": 181500,
+        "confidenceInterval": "±8%"
+      },
+      {
+        "month": "Apr",
+        "year": 2025,
+        "projectedRevenue": 188100,
+        "confidenceInterval": "±8%"
+      }
+    ]
+  },
+  "metadata": {
+    "dataGeneratedDate": "2024-11-01",
+    "fiscalYearStart": "2024-01-01",
+    "reportingCurrency": "USD",
+    "dataSource": "Internal Sales System v2.3",
+    "lastUpdated": "2024-10-31T23:59:59Z"
+  }
+}
+

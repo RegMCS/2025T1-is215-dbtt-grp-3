@@ -1,0 +1,155 @@
+{
+  "analytics": {
+    "chartColors": [
+      "#8884d8",
+      "#82ca9d",
+      "#ffc658",
+      "#ff8042",
+      "#8dd1e1",
+      "#a4de6c",
+      "#d0ed57"
+    ],
+    "suggestedQuestions": [
+      "What should I reorder this week?",
+      "Which products are trending and why?",
+      "Predict next month's revenue",
+      "What are the biggest risks right now?",
+      "Which caskets have the best profit margins?",
+      "How can we improve eco-friendly sales?"
+    ],
+    "aiAssistant": {
+      "name": "AI Analytics Assistant",
+      "description": "Ask me anything about your business data",
+      "placeholderText": "Ask about sales, inventory, trends, predictions...",
+      "loadingMessages": [
+        "Analyzing data...",
+        "Crunching numbers...",
+        "Reviewing trends..."
+      ]
+    }
+  },
+  "chat": {
+    "welcomeMessage": {
+      "title": "Welcome to Direct Funeral Services",
+      "introduction": "I'm here to help you find the right casket with compassion and care. I can assist you with:",
+      "capabilities": [
+        "Exploring our casket collection and materials",
+        "Understanding pricing and options",
+        "Answering questions about customization",
+        "Providing guidance during this difficult time"
+      ],
+      "closingText": "Please feel free to ask me anything. How may I assist you today?"
+    },
+    "placeholderText": "Ask about our casket options...",
+    "typingIndicator": "Typing...",
+    "buttonText": {
+      "browseCatalog": "Browse Our Casket Catalog"
+    }
+  },
+  "prePlanning": {
+    "progressCards": [
+      {
+        "id": "personal-info",
+        "title": "Personal Info",
+        "icon": "User",
+        "status": "In Progress",
+        "progress": 60
+      },
+      {
+        "id": "service-selection",
+        "title": "Service Selection",
+        "icon": "Package",
+        "status": "Not Started",
+        "progress": 0
+      },
+      {
+        "id": "legal-documents",
+        "title": "Legal Documents",
+        "icon": "FileText",
+        "status": "Not Started",
+        "progress": 0
+      },
+      {
+        "id": "payment-plan",
+        "title": "Payment Plan",
+        "icon": "CreditCard",
+        "status": "Not Started",
+        "progress": 0
+      }
+    ],
+    "quickActions": [
+      {
+        "id": "complete-form",
+        "text": "Complete Personal Information Form",
+        "icon": "FileCheck"
+      },
+      {
+        "id": "compare-packages",
+        "text": "Compare Service Packages",
+        "icon": "Package"
+      },
+      {
+        "id": "schedule-call",
+        "text": "Schedule Consultation Call",
+        "icon": "Clock"
+      },
+      {
+        "id": "download-checklist",
+        "text": "Download Planning Checklist",
+        "icon": "FileText"
+      }
+    ],
+    "paymentPlans": [
+      {
+        "id": "pay-full",
+        "name": "Pay in Full",
+        "highlight": "5% Off",
+        "badge": null,
+        "benefits": [
+          "Immediate price protection",
+          "Maximum savings",
+          "No future payments"
+        ],
+        "buttonText": "Select Plan",
+        "buttonVariant": "default"
+      },
+      {
+        "id": "monthly-plan",
+        "name": "Monthly Plan",
+        "highlight": "0% APR",
+        "badge": "Most Popular",
+        "benefits": [
+          "12-60 month terms",
+          "No interest charges",
+          "Flexible payment dates"
+        ],
+        "buttonText": "Select Plan",
+        "buttonVariant": "default"
+      },
+      {
+        "id": "insurance-assignment",
+        "name": "Insurance Assignment",
+        "highlight": "Transfer Policy",
+        "badge": null,
+        "benefits": [
+          "Use existing life insurance",
+          "No out-of-pocket cost",
+          "Simple assignment process"
+        ],
+        "buttonText": "Learn More",
+        "buttonVariant": "outline"
+      }
+    ],
+    "benefits": [
+      "No pressure, no rush",
+      "Save and update anytime",
+      "Lock in today's prices"
+    ]
+  },
+  "theme": {
+    "primaryColor": "#1a1a1a",
+    "secondaryColor": "#f59e0b",
+    "accentColor": "#10b981"
+  }
+}
+

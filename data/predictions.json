@@ -1,0 +1,98 @@
+{
+  "aiPredictions": [
+    {
+      "id": "pred-001",
+      "title": "Steel Casket Demand Spike",
+      "description": "Based on trending data, Steel Casket sales are predicted to increase by 15% next month.",
+      "confidence": "High",
+      "impact": "Revenue increase of ~$9,000",
+      "category": "sales",
+      "priority": "medium",
+      "actionable": true,
+      "recommendedActions": [
+        "Increase Steel Casket inventory by 20%",
+        "Alert suppliers about anticipated demand",
+        "Prepare marketing materials highlighting steel options"
+      ]
+    },
+    {
+      "id": "pred-002",
+      "title": "Eco-Friendly Growth",
+      "description": "Eco-friendly options showing 23% month-over-month growth. Consider increasing inventory.",
+      "confidence": "Medium",
+      "impact": "Potential 20% revenue boost",
+      "category": "inventory",
+      "priority": "high",
+      "actionable": true,
+      "recommendedActions": [
+        "Stock additional bamboo and willow caskets",
+        "Promote green burial packages",
+        "Partner with eco-certification organizations"
+      ]
+    },
+    {
+      "id": "pred-003",
+      "title": "Copper Casket Restocking",
+      "description": "Copper Casket is out of stock. Historical data shows lost revenue of ~$5,000/month when unavailable.",
+      "confidence": "High",
+      "impact": "Lost revenue prevention",
+      "category": "inventory",
+      "priority": "urgent",
+      "actionable": true,
+      "recommendedActions": [
+        "Immediate order from Premier Bronze Crafts",
+        "Set up automatic reorder alerts",
+        "Consider increasing minimum stock threshold"
+      ]
+    },
+    {
+      "id": "pred-004",
+      "title": "Premium Package Upsell Opportunity",
+      "description": "40% of Essential Package customers inquire about upgrades. Implementing targeted upselling could increase conversion.",
+      "confidence": "Medium",
+      "impact": "15-20% package revenue increase",
+      "category": "sales",
+      "priority": "medium",
+      "actionable": true,
+      "recommendedActions": [
+        "Train staff on upselling techniques",
+        "Create comparison materials for packages",
+        "Offer limited-time upgrade incentives"
+      ]
+    },
+    {
+      "id": "pred-005",
+      "title": "December Holiday Season Surge",
+      "description": "Historical patterns show 15% increase in December. Prepare for end-of-year planning spike.",
+      "confidence": "High",
+      "impact": "Revenue increase of ~$24,000",
+      "category": "seasonal",
+      "priority": "medium",
+      "actionable": true,
+      "recommendedActions": [
+        "Schedule additional staff for December",
+        "Ensure adequate inventory across all categories",
+        "Prepare year-end pricing promotions"
+      ]
+    },
+    {
+      "id": "pred-006",
+      "title": "Traditional Package Popularity",
+      "description": "Traditional Service Package continues to be #1 seller. Maintain strong inventory and service capacity.",
+      "confidence": "High",
+      "impact": "Sustained revenue stream",
+      "category": "operations",
+      "priority": "low",
+      "actionable": false,
+      "recommendedActions": []
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2024-11-01",
+    "modelVersion": "v2.3",
+    "confidenceLevels": ["Low", "Medium", "High"],
+    "categories": ["sales", "inventory", "seasonal", "operations", "customer"],
+    "priorityLevels": ["low", "medium", "high", "urgent"]
+  }
+}
+

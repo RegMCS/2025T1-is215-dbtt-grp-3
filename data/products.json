@@ -360,7 +360,8 @@
         "lowStockThreshold": 0,
         "lastRestocked": null,
         "supplier": "In-house Custom Shop",
-        "leadTime": "30-60 days"
+        "leadTime": "30-60 days",
+        "madeToOrder": true
       },
       "salesData": {
         "totalUnitsSold": 23,

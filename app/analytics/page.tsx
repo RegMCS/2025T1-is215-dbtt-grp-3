@@ -23,6 +23,9 @@ import {
   RefreshCw,
 } from "lucide-react"
 import productsData from "@/data/products.json"
+import analyticsData from "@/data/analytics.json"
+import predictionsData from "@/data/predictions.json"
+import uiConfig from "@/data/ui-config.json"
 import { Bar, BarChart, Line, LineChart as RechartsLineChart, Pie, PieChart as RechartsPieChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend, Cell, CartesianGrid, Area, AreaChart } from "recharts"
 import AnalyticsChat from "@/components/analytics-chat"
 
@@ -39,9 +42,16 @@ export default function AnalyticsPage() {
   const lastMonthPackageRevenue = productsData.packages.reduce((sum, p) => sum + p.salesData.lastMonthRevenue, 0)
   const lastMonthRevenue = lastMonthCasketRevenue + lastMonthPackageRevenue
 
-  // Low stock items
-  const lowStockCaskets = productsData.caskets.filter(c => c.inventory.inStock && c.inventory.quantity <= c.inventory.lowStockThreshold)
-  const outOfStockCaskets = productsData.caskets.filter(c => !c.inventory.inStock)
+  // Low stock items (exclude made-to-order items from these alerts)
+  const lowStockCaskets = productsData.caskets.filter(c => 
+    !c.inventory.madeToOrder && 
+    c.inventory.inStock && 
+    c.inventory.quantity <= c.inventory.lowStockThreshold
+  )
+  const outOfStockCaskets = productsData.caskets.filter(c => 
+    !c.inventory.madeToOrder && 
+    !c.inventory.inStock
+  )
 
   // Trending items
   const trendingCaskets = productsData.caskets.filter(c => c.salesData.trending)
@@ -84,52 +94,30 @@ export default function AnalyticsPage() {
     { name: "Direct", value: productsData.packages.filter(p => p.category === "Simple Packages").reduce((sum, p) => sum + p.salesData.totalRevenue, 0) },
   ]
 
-  // Simulated monthly trend data
-  const monthlyTrends = [
-    { month: "Jun", caskets: 45000, packages: 89000 },
-    { month: "Jul", caskets: 52000, packages: 95000 },
-    { month: "Aug", caskets: 48000, packages: 98000 },
-    { month: "Sep", caskets: 54000, packages: 102000 },
-    { month: "Oct", caskets: lastMonthCasketRevenue, packages: lastMonthPackageRevenue },
-  ]
+  // Monthly trend data from analytics dataset (last 5 months)
+  const monthlyTrends = analyticsData.monthlyRevenue.slice(-5).map(data => ({
+    month: data.month,
+    caskets: data.caskets,
+    packages: data.packages
+  }))
 
   // Inventory status
   const inventoryStatus = productsData.caskets.map(c => ({
     name: c.name.split(" ")[0],
     stock: c.inventory.quantity,
     threshold: c.inventory.lowStockThreshold,
-    status: !c.inventory.inStock ? "Out" : c.inventory.quantity <= c.inventory.lowStockThreshold ? "Low" : "Good"
+    status: c.inventory.madeToOrder 
+      ? "Made-to-Order" 
+      : !c.inventory.inStock 
+        ? "Out" 
+        : c.inventory.quantity <= c.inventory.lowStockThreshold 
+          ? "Low" 
+          : "Good"
   }))
 
-  const COLORS = ['#8884d8', '#82ca9d', '#ffc658', '#ff8042', '#8dd1e1', '#a4de6c', '#d0ed57']
-
-  // AI Predictions
-  const predictions = [
-    {
-      title: "Steel Casket Demand Spike",
-      description: "Based on trending data, Steel Casket sales are predicted to increase by 15% next month.",
-      confidence: "High",
-      impact: "Revenue increase of ~$9,000"
-    },
-    {
-      title: "Eco-Friendly Growth",
-      description: "Eco-friendly options showing 23% month-over-month growth. Consider increasing inventory.",
-      confidence: "Medium",
-      impact: "Potential 20% revenue boost"
-    },
-    {
-      title: "Copper Casket Restocking",
-      description: "Copper Casket is out of stock. Historical data shows lost revenue of ~$5,000/month when unavailable.",
-      confidence: "High",
-      impact: "Lost revenue prevention"
-    },
-    {
-      title: "Premium Package Upsell Opportunity",
-      description: "40% of Essential Package customers inquire about upgrades. Implementing targeted upselling could increase conversion.",
-      confidence: "Medium",
-      impact: "15-20% package revenue increase"
-    }
-  ]
+  // Chart colors and predictions from config
+  const COLORS = uiConfig.analytics.chartColors
+  const predictions = predictionsData.aiPredictions.slice(0, 4) // Show first 4 predictions
 
   return (
     <main className="flex flex-col min-h-screen bg-background">
@@ -526,9 +514,11 @@ export default function AnalyticsPage() {
                         <tr key={casket.id} className="border-b hover:bg-muted/50">
                           <td className="p-2 font-medium">{casket.name}</td>
                           <td className="p-2 text-muted-foreground">{casket.category.split(" ")[0]}</td>
-                          <td className="p-2 text-center">{casket.inventory.quantity}</td>
+                          <td className="p-2 text-center">{casket.inventory.madeToOrder ? "N/A" : casket.inventory.quantity}</td>
                           <td className="p-2 text-center">
-                            {!casket.inventory.inStock ? (
+                            {casket.inventory.madeToOrder ? (
+                              <Badge className="bg-blue-500">Made-to-Order</Badge>
+                            ) : !casket.inventory.inStock ? (
                               <Badge variant="destructive">Out</Badge>
                             ) : casket.inventory.quantity <= casket.inventory.lowStockThreshold ? (
                               <Badge className="bg-orange-500">Low</Badge>
@@ -602,13 +592,11 @@ export default function AnalyticsPage() {
                 <ResponsiveContainer width="100%" height={300}>
                   <RechartsLineChart
                     data={[
-                      { month: "Oct (Actual)", value: lastMonthRevenue },
-                      { month: "Nov", value: lastMonthRevenue * 1.08 },
-                      { month: "Dec", value: lastMonthRevenue * 1.15 },
-                      { month: "Jan", value: lastMonthRevenue * 1.12 },
-                      { month: "Feb", value: lastMonthRevenue * 1.06 },
-                      { month: "Mar", value: lastMonthRevenue * 1.10 },
-                      { month: "Apr", value: lastMonthRevenue * 1.14 },
+                      { month: "Oct (Actual)", value: analyticsData.monthlyRevenue[analyticsData.monthlyRevenue.length - 1].total },
+                      ...analyticsData.forecasts.nextSixMonths.map(f => ({
+                        month: f.month,
+                        value: f.projectedRevenue
+                      }))
                     ]}
                   >
                     <CartesianGrid strokeDasharray="3 3" />
@@ -620,7 +608,8 @@ export default function AnalyticsPage() {
                 </ResponsiveContainer>
                 <div className="mt-4 p-4 bg-secondary/10 rounded-lg">
                   <p className="text-sm">
-                    <strong>AI Analysis:</strong> December typically sees a 15% increase due to end-of-year planning. 
+                    <strong>AI Analysis:</strong> Based on historical trends, {analyticsData.seasonalTrends.highSeasonMonths[0]} typically sees a 15% increase due to end-of-year planning. 
+                    Current forecast confidence is {analyticsData.forecasts.nextSixMonths[0].confidenceInterval}. 
                     Inventory levels should be adjusted accordingly, particularly for Traditional and Premium packages.
                   </p>
                 </div>

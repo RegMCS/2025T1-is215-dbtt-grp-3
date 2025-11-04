@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card"
 import { Send, Loader2, Sparkles } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 import ReactMarkdown from "react-markdown"
+import uiConfig from "@/data/ui-config.json"
 
 export default function AnalyticsChat() {
   const [inputValue, setInputValue] = useState("")
@@ -44,22 +45,15 @@ export default function AnalyticsChat() {
     }
   }
 
-  const suggestedQuestions = [
-    "What should I reorder this week?",
-    "Which products are trending and why?",
-    "Predict next month's revenue",
-    "What are the biggest risks right now?",
-    "Which caskets have the best profit margins?",
-    "How can we improve eco-friendly sales?",
-  ]
+  const { suggestedQuestions, aiAssistant } = uiConfig.analytics
 
   return (
     <Card className="flex flex-col h-[600px] border-2 border-secondary">
       <div className="flex items-center gap-2 p-4 border-b bg-secondary/10">
         <Sparkles className="h-5 w-5 text-secondary" />
         <div>
-          <h3 className="font-semibold">AI Analytics Assistant</h3>
-          <p className="text-xs text-muted-foreground">Ask me anything about your business data</p>
+          <h3 className="font-semibold">{aiAssistant.name}</h3>
+          <p className="text-xs text-muted-foreground">{aiAssistant.description}</p>
         </div>
       </div>
 
@@ -127,7 +121,7 @@ export default function AnalyticsChat() {
             <div className="max-w-[85%] rounded-lg p-3 bg-muted">
               <div className="flex items-center gap-2">
                 <Loader2 className="h-4 w-4 animate-spin text-secondary" />
-                <span className="text-sm text-muted-foreground">Analyzing data...</span>
+                <span className="text-sm text-muted-foreground">{aiAssistant.loadingMessages[0]}</span>
               </div>
             </div>
           </div>
@@ -140,7 +134,7 @@ export default function AnalyticsChat() {
         <Input
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          placeholder="Ask about sales, inventory, trends, predictions..."
+          placeholder={aiAssistant.placeholderText}
           disabled={status === "streaming"}
           className="flex-1"
         />
